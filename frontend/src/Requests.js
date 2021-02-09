@@ -7,6 +7,7 @@ const requests = {
     fetchHorrorMovies: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=27`,
     fetchRomanceMovies: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=10749`,
     fetchDocumentaries: `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_genres=99`,
+    trailer: `/videos?api_key=${process.env.REACT_APP_API_KEY}`
 };
 
 export default requests

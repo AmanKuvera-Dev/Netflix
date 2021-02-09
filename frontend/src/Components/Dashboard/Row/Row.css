@@ -1,0 +1,65 @@
+.row {
+  color: white;
+  margin-left: 20px;
+  position: relative;
+}
+
+.row__moviesRow {
+  padding: 20px;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.row__moviesRow::-webkit-scrollbar {
+  display: none;
+}
+
+.row__scrollButton {
+  position: absolute;
+  height: 62%;
+  width: 50px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 5rem;
+  border: none;
+  transition: transform 0.35s ease;
+  outline: none;
+  display: none;
+  transition: all ease-in 0.4s;
+}
+
+.button__right {
+  right: 2px !important;
+}
+
+.row__scrollButtonLarge {
+  height: 81.4%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.row__moviesRow:hover .row__scrollButton {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all ease-in 0.3s;
+}
+
+.row__scrollButtonLarge:hover,
+.row__scrollButton:hover {
+  transform: scale(1.07);
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.button__left {
+  left: 2px !important;
+  z-index: 10;
+  opacity: 0;
+}
+
+.button__left:hover {
+  opacity: 0.8 !important;
+}

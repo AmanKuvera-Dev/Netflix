@@ -1,6 +1,7 @@
 import React from 'react'
 import './Movie.css'
 
+
 function Movie({isLargeRow =false , movie}) {
     const base_url = "https://image.tmdb.org/t/p/original/"
 
@@ -17,6 +18,7 @@ function Movie({isLargeRow =false , movie}) {
                 <h3>{movie.original_title ? movie.original_title : movie.name}</h3>
                 <p>Rating : {movie.vote_average} /10</p>
             </div>
+
         </div>
     )
 }
