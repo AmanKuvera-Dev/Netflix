@@ -6,6 +6,7 @@
   background: url("https://assets.nflxext.com/ffe/siteui/vlv3/538717c0-f271-40e9-a99e-b07f9c521322/4a9270dc-7a97-44da-bda4-4dfc2dd4ea20/IN-en-20210201-popsignuptwoweeks-perspective_alpha_website_small.jpg")
     center no-repeat;
   background-size: cover;
+  font-family: Helvetica Neue, Arial, sans-serif;
 }
 
 .login__gradient {
@@ -30,12 +31,14 @@
   font-size: 3.125rem;
   margin-bottom: 10px;
   text-align: center;
+  font-weight: 700;
 }
 
 .login__body > h2 {
   font-weight: 450;
   margin-bottom: 30px;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .login__body > h3 {
@@ -45,9 +48,7 @@
 
 .login__input {
   position: relative;
-  background: #fff;
   margin-top: 30px;
-
   max-width: 650px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -60,7 +61,14 @@
   transition: all ease 0.35s;
 }
 
-.login__input > form > input {
+.login__inputForm {
+  background: #fff !important;
+  height: 100%;
+  position: relative;
+  width: 70%;
+}
+
+.login__inputForm > input {
   padding: 10px 10px;
   outline: none;
   width: 100%;
@@ -73,6 +81,7 @@
 .login__inputLabel {
   position: absolute;
   left: 5px;
+  top: 15px;
   color: #555;
   pointer-events: none;
   display: block;
@@ -96,7 +105,6 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
-  width: 40%;
   height: 100% !important;
 }
 
@@ -112,16 +120,17 @@
   text-align: center;
 }
 
-@media (max-width: 1148px) {
+@media (max-width: 1183px) {
   .login__input > form > button {
     padding: 16px 10px;
     font-size: 15px;
   }
 }
 
-@media (max-width: 978px) {
+@media (max-width: 983px) {
   .login__input > form > button {
-    width: 50%;
+    width: 40%;
+    font-size: 10;
   }
 }
 
@@ -139,10 +148,45 @@
   }
 }
 
-@media (max-width: 962px) {
+@media (max-width: 978px) {
   .login__input > form > button {
-    font-size: 10px;
-    padding: 19px;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    width: 30%;
+  }
+
+  .login__inputForm {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .login__input {
+    min-width: 80%;
+  }
+}
+
+@media (max-width: 978px) and (min-width: 954px) {
+  .login__input > form > button {
+    font-size: 15px;
+    padding: 16px;
+    font-weight: 500;
+    width: 30%;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 610px) {
+  .login__input > form > button {
+    font-size: 12px;
+    padding: 7px 10px;
+    font-weight: 500;
+    width: 120px;
+  }
+
+  .login__inputForm {
+    width: 100% !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -160,14 +204,8 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 952px) {
   .login__input > form {
-    min-width: 60%;
-  }
-}
-
-@media (max-width: 710px) {
-  .login__input > form {
-    min-width: 80%;
+    flex-wrap: wrap;
   }
 }

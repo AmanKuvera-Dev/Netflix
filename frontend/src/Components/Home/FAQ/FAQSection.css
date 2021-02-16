@@ -1,0 +1,22 @@
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+.faqSection > h1 {
+  font-size: 46px;
+  color: #fff;
+  margin-bottom: 50px;
+  white-space: nowrap;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+@media (max-width: 952px) {
+  .faqSection > h1 {
+    font-size: 2rem !important;
+    white-space: normal;
+    text-align: center;
+  }
+}

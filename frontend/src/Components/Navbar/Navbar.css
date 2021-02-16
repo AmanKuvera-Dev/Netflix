@@ -1,21 +1,19 @@
 .nav {
-  position: fixed;
-  top: 0;
-  padding: 20px;
+  position: absolute;
+  left: 0;
+  padding: 20px !important;
   width: 100%;
   height: 30px;
+  display: flex;
+  justify-content: space-between !important;
+  margin: 0;
   z-index: 99;
   transition-timing-function: ease-in;
   transition: all 0.5s;
 }
 
-.nav__contents {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav__logo {
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 0px;
   width: 100px;
@@ -24,12 +22,18 @@
   cursor: pointer;
 }
 
+.navHome .nav__logo {
+  top: 0px;
+}
+
 .navHomeLogo {
   width: 150px;
 }
 
 .nav__black {
   background-color: #111;
+  position: fixed;
+  top: 0;
 }
 
 .nav__avatar {
@@ -40,8 +44,6 @@
 }
 
 .nav__signInButton {
-  position: fixed;
-  right: 20px;
   cursor: pointer;
   outline: none;
   border-color: transparent;
@@ -51,4 +53,11 @@
   color: white;
   background-color: #e50914;
   box-shadow: none;
+  height: 40px !important;
+}
+
+.navHome {
+  height: 40px;
+  position: absolute;
+  left: 0;
 }

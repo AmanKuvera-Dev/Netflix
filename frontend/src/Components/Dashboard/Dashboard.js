@@ -1,7 +1,6 @@
 import {useRef} from 'react'
 import requests from '../../Requests'
 import Banner from './Banner/Banner'
-import Navbar from '../Navbar/Navbar'
 import Row from './Row/Row'
 import './Dashboard.css'
 
@@ -18,7 +17,6 @@ function Home() {
 
     return (
         <div className="dashboard">
-            <Navbar/>
             <Banner/>
             <Row category="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} refName={Originals}/>
             <Row category="Trending Now" fetchUrl={requests.fetchTrending} refName={Trending}/>

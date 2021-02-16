@@ -3,7 +3,7 @@ import './Login.css'
 
 function Login() {
     
-    const[registerEmail,setRegisterEmail] = useState(null)
+    const[registerEmail,setRegisterEmail] = useState("")
     return (
         <div className="login">
 
@@ -16,9 +16,11 @@ function Login() {
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
 
                 <div className="login__input">
-                    <form className="login__inputForm">
-                        <input type="email" value={registerEmail} onChange={e=>setRegisterEmail(e.target.value)} required/> 
-                        <label className={`login__inputLabel ${registerEmail && "validInput"}`}>Email address</label>
+                    <form>
+                        <div className="login__inputForm">
+                            <input type="email" value={registerEmail} onChange={e=>setRegisterEmail(e.target.value)} required/> 
+                            <label className={`login__inputLabel ${registerEmail && "validInput"}`}>Email address</label>
+                        </div>
                         <button type="submit">GET STARTED</button>             
                     </form>
                 </div>
