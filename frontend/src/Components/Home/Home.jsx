@@ -1,4 +1,5 @@
 import React from 'react'
+import DevInfo from './DevInfo/DevInfo'
 import FAQSection from './FAQ/FAQSection'
 import './Home.css'
 import Login from './Login/Login'
@@ -10,7 +11,7 @@ function Home() {
             <Login />
             <Sections/>
             <FAQSection/>
-            
+            <DevInfo/>
         </div>
     )
 }

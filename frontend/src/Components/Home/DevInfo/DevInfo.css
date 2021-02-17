@@ -1,0 +1,164 @@
+.devInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  justify-content: center;
+}
+
+.devInfo > h1 {
+  font-size: 46px;
+  color: #fff;
+  margin-bottom: 50px;
+  white-space: nowrap;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+@media (max-width: 952px) {
+  .devInfo > h1 {
+    font-size: 2rem !important;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+.devInfo__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 40px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.devInfo__Intro {
+  flex: 0.7;
+}
+
+.devInfo__Intro > h1 {
+  font-size: 35px;
+  color: #000;
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+.devInfo__Intro > h2 {
+  font-size: 15px;
+  color: rgb(179, 17, 17);
+  font-weight: 600;
+  white-space: nowrap;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.devInfo__Intro > p {
+  font-size: 15px;
+  color: #000;
+  white-space: normal;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.devInfo__contact {
+  margin-left: 15px;
+}
+
+.devInfo__Email > a,
+.devInfo__LinkedIn > a,
+.devInfo__github > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0.4;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.devInfo__contactText {
+  font-size: 15px;
+  color: #000;
+  white-space: normal;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  text-align: right;
+}
+
+.devInfo__Email > a > button {
+  border-radius: 50%;
+  box-shadow: none !important;
+  outline: none;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 5px;
+}
+
+.devInfo__LinkedIn > a > button {
+  border-radius: 50%;
+  box-shadow: none !important;
+  outline: none;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 5px;
+}
+
+.devInfo__github > a > button {
+  border-radius: 50%;
+  box-shadow: none !important;
+  outline: none;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  background-color: #fff;
+  margin-left: 5px;
+  overflow: hidden;
+  opacity: 0.9 !important;
+}
+
+.devInfo__github > a > button > img {
+  width: 100% !important;
+  object-fit: contain;
+}
+
+.devInfo__Email > a > button > img,
+.devInfo__LinkedIn > a > button > img {
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
+}
+
+@media (max-width: 821px) {
+  .devInfo__contents {
+    justify-content: center;
+  }
+
+  .devInfo__contact,
+  .devInfo__Intro {
+    width: 100%;
+    flex: 1;
+  }
+
+  .devInfo__contact {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .devInfo__Email > a > button > img {
+    min-width: 30px;
+  }
+}

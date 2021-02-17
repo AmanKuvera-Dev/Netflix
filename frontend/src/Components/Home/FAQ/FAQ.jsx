@@ -3,6 +3,7 @@ import './FAQ.css'
 
 function FAQ({question, answer,setShowFAQ,questionNumber}) {
 
+
     return (
         <div className="faq" onClick={()=> questionNumber? setShowFAQ(false):setShowFAQ(true)}>
             <div className="faq__questionCover">

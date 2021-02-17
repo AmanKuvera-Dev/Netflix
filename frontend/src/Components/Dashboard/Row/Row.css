@@ -4,6 +4,13 @@
   position: relative;
 }
 
+.row > h1 {
+  font-size: 30px;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+
 .row__moviesRow {
   padding: 20px;
   display: flex;

@@ -1,15 +1,13 @@
-/*
-  HTML5 Reset  ::  reset.css
-	---------------------------
-  We have learned much from/been inspired by/taken code where offered from:
-  
-	Eric Meyer			      		 ::  http://meyerweb.com
-	HTML5 Doctor			       	 ::  http://html5doctor.com
-  and the HTML5 Boilerplate	 ::  http://html5boilerplate.com
-  -----------------------------------------------------------
-  Let's default this puppy out
-  -----------------------------
-*/
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  background-color: rgba(42, 42, 42, 0.5);
+  border-radius: 10px;
+}
 
 html,
 body,
@@ -169,6 +167,7 @@ embed {
 */
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /*

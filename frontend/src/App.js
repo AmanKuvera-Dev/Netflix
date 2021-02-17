@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar/Navbar';
 
 function App() {
 
-  const user= null;
+  const user= "null";
 
   return (
     <div className="app">
