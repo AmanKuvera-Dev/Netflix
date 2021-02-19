@@ -55,6 +55,10 @@
   height: 40px !important;
 }
 
+.nav__signInButton--hide {
+  display: none;
+}
+
 .navHome {
   height: 40px;
   position: absolute;

@@ -162,3 +162,27 @@
     min-width: 30px;
   }
 }
+
+@media (max-width: 475px) {
+  .devInfo__Intro > h1 {
+    white-space: normal;
+  }
+
+  .devInfo__contactText {
+    display: none;
+  }
+  .devInfo__contact {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
+  }
+  .devInfo__Intro > h2 {
+    white-space: normal;
+  }
+  .devInfo {
+    padding: 40px 10px !important;
+  }
+  .devInfo__contents {
+    padding: 15px;
+  }
+}

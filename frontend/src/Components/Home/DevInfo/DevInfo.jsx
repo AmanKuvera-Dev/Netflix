@@ -1,7 +1,6 @@
 import React from 'react'
 import './DevInfo.css'
 import linkedIn from '../../images/linkedIn.png'
-import github from '../../images/github.svg'
 
 function DevInfo() {
     return (

@@ -4,10 +4,11 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
+import SignIn from './Components/SignIn/SignIn';
 
 function App() {
 
-  const user= "null";
+  const user= null;
 
   return (
     <div className="app">
@@ -18,9 +19,13 @@ function App() {
           <Route path="/:id/Dashboard">
             <Dashboard/>
           </Route>
+          <Route path="/login">
+            <SignIn/>
+          </Route>
           <Route path="/">
             <Home/>
           </Route>
+
         </Switch>
 
       
